@@ -10,76 +10,78 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
-  <body class="min-h-screen flex items-center justify-center">
-    <div class="bg-white w-full max-w-md rounded-xl shadow-2xl">
-      <div class="flex items-center justify-center">
-        <img
-          src="signIn.png"
-          alt="Register"
-          class="w-12 bg-slate-300 border-slate-100 rounded-xl py-3 px-3 mt-8"
-        />
-      </div>
-      <div class="text-center mt-5">
-        <h1 class="text-slate-900 font-bold text-3xl">Create Account</h1>
-        <p class="text-gray-600 mt-2">Join us today!It only takes a minute.</p>
-      </div>
-      <form
-        class="max-w-xl mx-auto p-6 bg-white space-y-4 mt-2"
-      >
-        <!--First Row-->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <!-- First Text Field -->
-          <div class="flex flex-col">
-            <label class="mb-1 font-sm font-bold">Full Name</label>
-            <input
-              type="text"
-              placeholder="John Doe"
-              class="bg-slate-50 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
-          </div>
-          <!-- Second Text Field -->
-          <div class="flex flex-col">
-            <label class="mb-1 font-sm font-bold">Email Address</label>
-            <input
-              type="text"
-              placeholder="name@company.com"
-              class="bg-slate-50 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
-          </div>
+  <body>
+    <div class="flex h-screen items-center justify-center">
+      <div class="bg-white w-full max-w-md rounded-xl shadow-2xl">
+        <div class="flex items-center justify-center mt-0">
+          <img
+            src="signIn.png"
+            alt="Register"
+            class="w-12 bg-slate-300 border-slate-100 rounded-xl py-3 px-3 mt-8"
+          />
         </div>
-          <!--Second Row-->
-          <div class="flex flex-col">
-            <label class="mb-1 font-sm font-bold">Password</label>
-            <input type="password"
-              rows="2"
-              placeholder="••••••••"
-              class="bg-slate-50 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-gray-600"
-            ></input>
+        <div class="text-center mt-5">
+          <h1 class="text-slate-900 font-bold text-3xl">Create Account</h1>
+          <p class="text-gray-600 mt-2">Join us today!It only takes a minute.</p>
+        </div>
+        <form
+          class="mx-auto p-6 rounded-xl bg-white space-y-4 mt-2"
+        >
+          <!--First Row-->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- First Text Field -->
+            <div class="flex flex-col">
+              <label class="mb-1 font-sm font-bold">Full Name</label>
+              <input
+                type="text"
+                placeholder="John Doe"
+                class="bg-slate-50 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
+            <!-- Second Text Field -->
+            <div class="flex flex-col">
+              <label class="mb-1 font-sm font-bold">Email Address</label>
+              <input
+                type="text"
+                placeholder="name@company.com"
+                class="bg-slate-50 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
           </div>
+            <!--Second Row-->
+            <div class="flex flex-col">
+              <label class="mb-1 font-sm font-bold">Password</label>
+              <input type="password"
+                rows="2"
+                placeholder="••••••••"
+                class="bg-slate-50 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-gray-600"
+              ></input>
+            </div>
 
-          <!--Third Row-->
-          <div class="flex flex-col">
-            <label class="mb-1 font-sm font-bold">Confirm Password</label>
-            <input type="password"
-              rows="2"
-              placeholder="••••••••"
-              class="bg-slate-50 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-gray-600"
-            ></input>
+            <!--Third Row-->
+            <div class="flex flex-col">
+              <label class="mb-1 font-sm font-bold">Confirm Password</label>
+              <input type="password"
+                rows="2"
+                placeholder="••••••••"
+                class="bg-slate-50 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-gray-600"
+              ></input>
+            </div>
+          
+          <div class="flex gap-1">
+              <input type="checkbox" class="mb-1"/>
+              <p class="m-0 text-sm text-gray-600">I agree to the <a href="term.html" class="text-indigo-600 underline">Terms of Services </a>and<a href="policy.html" class="text-indigo-600 underline"> Privacy Policy.</a></p>
           </div>
-        
-        <div class="flex gap-1">
-            <input type="checkbox" class="mb-1"/>
-            <p class="m-0 text-sm text-gray-600">I agree to the <a href="term.html" class="text-indigo-600 underline">Terms of Services </a>and<a href="policy.html" class="text-indigo-600 underline"> Privacy Policy.</a></p>
-        </div>
-        <div class="flex items-center justify-center"> 
-          <button class="bg-purple-500 hover:bg-purple-800 w-full text-white font-bold py-2 px-2 rounded-lg shadow-xl">
-            Check My Account <i class="fa-solid fa-angles-right"></i>
-          </button>
-        </div>
-        <div class="flex items-center justify-center gap-1">
-        <p class="text-sm text-gray-600">Already have an account? </p><a href="signIn.html" class="text-sm text-indigo-600 font-bold">Sign in here</a>
-        </div>
-      </form>
+          <div class="flex items-center justify-center"> 
+            <button class="bg-purple-500 hover:bg-purple-800 w-full text-white font-bold py-2 px-2 rounded-lg shadow-xl">
+              Check My Account <i class="fa-solid fa-angles-right"></i>
+            </button>
+          </div>
+          <div class="flex items-center justify-center gap-1">
+          <p class="text-sm text-gray-600">Already have an account? </p><a href="signIn.html" class="text-sm text-indigo-600 font-bold">Sign in here</a>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
